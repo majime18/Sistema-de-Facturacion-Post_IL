@@ -1,0 +1,21 @@
+# Firebase
+.firebase/
+firebase-debug.log
+.firebaserc
+
+# Node
+node_modules/
+functions/node_modules/
+
+# Secrets — NUNCA subir al repo
+functions/.env
+*.p12
+*.pfx
+secrets.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
