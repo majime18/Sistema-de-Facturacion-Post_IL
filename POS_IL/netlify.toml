@@ -1,0 +1,17 @@
+# POS_IL — Configuración Netlify
+# Colocar en la misma carpeta que index.html
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
