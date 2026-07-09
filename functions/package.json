@@ -1,0 +1,38 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@peculiar/webcrypto": "^1.7.1",
+    "@xmldom/xmldom": "^0.9.10",
+    "axios": "^1.18.1",
+    "firebase-admin": "^13.6.0",
+    "firebase-functions": "^7.0.0",
+    "haciendacostarica-signer": "^1.0.2",
+    "moment-timezone": "^0.6.2",
+    "node-forge": "^1.4.0",
+    "nodemailer": "^9.0.3",
+    "pdfkit": "^0.19.1",
+    "xml-crypto": "^6.1.2",
+    "xmlbuilder2": "^4.0.3",
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.34"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.4.1"
+  },
+  "private": true
+}
